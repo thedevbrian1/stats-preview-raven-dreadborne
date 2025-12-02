@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0c1b;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 1000px;
+  display: flex;
+  /* border: 1px solid yellow; */
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* .lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+} */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+span {
+  color: #b059db;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+main > div {
+  flex: 1;
+}
+
+main > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  /* border: 1px solid red; */
+  padding: 30px;
+  background-color: #1c1938;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+main > div:nth-child(2) {
+  position: relative;
+}
+
+main > div:nth-child(2)::before {
+  background-color: purple;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grey {
+  color: #cccccc;
+}
+
+main ul {
+  display: flex;
+  /* border: 1px solid green; */
+  justify-content: space-between;
+}
+
+main ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+main ul li h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+main ul li p {
+  font-size: 30px;
+  font-weight: 600;
+  /* order: -1; */
+}
